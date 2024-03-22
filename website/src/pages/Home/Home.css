@@ -1,0 +1,61 @@
+.section-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Adicionar posição relativa ao contêiner pai */
+}
+
+.info-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+    margin-left: 60px;
+    flex: 1;
+    z-index: 2; /* Ajustar o z-index para colocar a div de informações acima do trapézio */
+}
+
+.info-home h1 {
+    font-size: 50px;
+}
+
+.info-home p {
+    font-size: 20px;
+}
+
+.info-home button {
+    margin-top: 30px;
+    width: fit-content;
+    background-color: var(--primary-color);
+    padding: 20px 30px;
+    color: #ffffff;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trapezoid {
+    position: absolute; /* Posicionar o trapézio absolutamente em relação ao contêiner pai */
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 500px solid transparent;
+    border-bottom: 1000px solid var(--primary-color);
+    z-index: 1; /* Ajustar o z-index para colocar o trapézio abaixo da imagem */
+}
+
+.image-home {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.image-home img {
+    min-width: 80%; 
+    height: auto; 
+}
