@@ -38,7 +38,7 @@ function CustomMenu () {
         }
     ]
     return (
-        <Menu theme="dark" style={{backgroundColor: "var(--primary-color)"}} items={items} mode="horizontal" />
+        <Menu theme="light" style={{backgroundColor: "var(--white-color)"}} items={items} mode="horizontal" />
     )
     
 }
