@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* Adicionar posição relativa ao contêiner pai */
+    position: relative;
+    min-height: 100%;
 }
 
 .info-home {

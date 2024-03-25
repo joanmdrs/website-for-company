@@ -1,0 +1,112 @@
+.component-card {
+    padding: 0;
+    margin: 0;
+    width: min-content;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    transition: ease-in-out 500ms;
+    position: relative; /* Importante para o posicionamento absoluto do link */
+}
+  
+.component-card:hover {
+    transform: scale(1.05);
+}
+  
+.card-image {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card-image img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+  
+.learn-more-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.learn-more-link:hover {
+    color: #fff;
+}
+  
+  .component-card:hover .learn-more-link {
+    opacity: 1; 
+  }
+  
+  .card-title {
+    width: 70%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    position: relative;
+  }
+  
+  .card-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -29.7px; 
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 30px; 
+    border-color: transparent transparent transparent ; 
+  }
+  
+  .card-title h4 {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+  }
+  
+.card-description {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-description h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.card-description p {
+    font-size: 15px;
+    color: #848484;
+}
+  
+
+.card-footer {
+    border-top: 1px solid #e6e6e6;
+    color: #A4A4A4;
+    font-weight: 200;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+.item-footer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+  

@@ -6,8 +6,8 @@ import { Layout } from 'antd';
 import { Header } from 'antd/es/layout/layout';
 import { Content } from 'antd/es/layout/layout';
 import { Footer } from 'antd/es/layout/layout';
-
 import Home from '@/pages/Home/Home';
+import Courses from '@/pages/Courses/Courses';
 
 function App() {
     return (
@@ -21,8 +21,8 @@ function App() {
                 <Header 
                     style={{
                         display: 'flex',
-                        justifyContent: "space-between",
                         alignItems: 'center',
+                        justifyContent: 'space-around',
                         backgroundColor: 'var(--white-color)',
                         boxShadow:"rgba(0, 0, 0, 0.24) 0px 3px 8px",
                         zIndex: '2'
@@ -34,6 +34,8 @@ function App() {
                 </Header>
                 <Content>
                     <Home />
+
+                    <Courses />
 
                 </Content>
 

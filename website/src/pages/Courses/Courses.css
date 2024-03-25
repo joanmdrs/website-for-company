@@ -1,0 +1,32 @@
+.courses-section {
+    height: 100%;
+    margin: 100px;
+    margin-top:80px;
+}
+
+.courses-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.courses-header .courses-info h1 {
+    margin: 0 ;
+    font-size: 35px;
+}
+
+.courses-header .courses-info p {
+    font-size: 17px;
+}
+
+.courses-header .view-all-courses {
+    cursor: pointer;
+}
+
+.courses-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+}
