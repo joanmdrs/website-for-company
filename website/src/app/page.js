@@ -8,6 +8,7 @@ import { Content } from 'antd/es/layout/layout';
 import { Footer } from 'antd/es/layout/layout';
 import Home from '@/pages/Home/Home';
 import Courses from '@/pages/Courses/Courses';
+import Reasons from '@/pages/Reasons/Reasons';
 
 function App() {
     return (
@@ -34,8 +35,8 @@ function App() {
                 </Header>
                 <Content>
                     <Home />
-
                     <Courses />
+                    <Reasons />
 
                 </Content>
 
