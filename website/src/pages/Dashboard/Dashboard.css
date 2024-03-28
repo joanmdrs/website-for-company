@@ -1,0 +1,84 @@
+.dashboard-section {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("../../assets/asset-background-dashboard.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.dashboard-content {
+    display: flex;
+    gap: 150px;
+    position: relative;
+
+}
+
+.item-dashboard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+
+}
+
+.metric {
+    position: relative;
+    font-size: 20px;
+
+
+}
+
+.container-animation h2 {
+    bottom: 0;
+    position: absolute;
+    font-size: 60px;
+
+}
+
+
+.container-animation h2:nth-child(1) {
+    color: #fff;
+}
+
+.container-animation h2:nth-child(2) {
+    color: lightgreen;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+0%,
+100% {
+  clip-path: polygon(
+    0% 45%,
+    16% 44%,
+    33% 50%,
+    54% 60%,
+    70% 61%,
+    84% 59%,
+    100% 52%,
+    100% 100%,
+    0% 100%
+  );
+}
+
+50% {
+  clip-path: polygon(
+    0% 60%,
+    15% 65%,
+    34% 66%,
+    51% 62%,
+    67% 50%,
+    84% 45%,
+    100% 46%,
+    100% 100%,
+    0% 100%
+  );
+}
+}

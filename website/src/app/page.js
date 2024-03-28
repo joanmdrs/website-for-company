@@ -10,6 +10,7 @@ import Home from '@/pages/Home/Home';
 import Courses from '@/pages/Courses/Courses';
 import Reasons from '@/pages/Reasons/Reasons';
 import Presentation from '@/pages/Presentation/Presentation';
+import Dashboard from '@/pages/Dashboard/Dashboard';
 
 function App() {
     return (
@@ -42,6 +43,8 @@ function App() {
                     <Reasons />
 
                     <Presentation />
+
+                    <Dashboard />
 
                 </Content>
 
