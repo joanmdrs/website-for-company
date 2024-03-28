@@ -35,10 +35,10 @@
 
 .item-content:hover .border-left {
     animation-name: animate-height;
-    animation-duration: 300ms ;
+    animation-duration: 300ms;
     animation-delay: 0s;
     animation-fill-mode: forwards;
-
+    animation-timing-function: linear;
 }
 
 .item-content:hover .border-top {
@@ -46,6 +46,7 @@
     animation-duration: 300ms;
     animation-delay: 300ms;
     animation-fill-mode: forwards;
+    animation-timing-function: linear;
 
 }
 
@@ -54,6 +55,7 @@
     animation-duration: 300ms;
     animation-delay: 600ms;
     animation-fill-mode: forwards;
+    animation-timing-function: linear;
 
 }
 
@@ -63,6 +65,7 @@
     animation-delay: 900ms;
     animation-fill-mode: forwards;
     transition: all 400ms ease;
+    animation-timing-function: linear;
 
 }
 
@@ -70,7 +73,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 1px;
+    width: 2px;
     height: 0%;
     background-color: #57b9a8;
     background-image: -webkit-gradient(linear, left top, right top, from(#cf3e71), color-stop(50%, #3b79ac), to(#57b9a8));
@@ -81,10 +84,9 @@
 .border-top {
     position: absolute;
     top: 0;
-    right: 0;
     left: 0;
     width: 0%;
-    height: 1px;
+    height: 2px;
     background-color: #57b9a8;
     background-image: -webkit-gradient(linear, left top, right top, from(#cf3e71), color-stop(50%, #3b79ac), to(#57b9a8));
     background-image: linear-gradient(90deg, #cf3e71, #3b79ac 50%, #57b9a8);
@@ -94,7 +96,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 1px;
+    width: 2px;
     height: 0%;
     background-color: #57b9a8;
     background-image: -webkit-gradient(linear, left top, right top, from(#cf3e71), color-stop(50%, #3b79ac), to(#57b9a8));
@@ -106,7 +108,7 @@
     right: 0;
     bottom: 0;
     width: 0%;
-    height: 1px;
+    height: 2px;
     background-color: #57b9a8;
     background-image: -webkit-gradient(linear, left top, right top, from(#cf3e71), color-stop(50%, #3b79ac), to(#57b9a8));
     background-image: linear-gradient(90deg, #cf3e71, #3b79ac 50%, #57b9a8);
@@ -121,17 +123,6 @@
         width: 100%;
     }
 }
-
-@keyframes animate-reverse {
-    from {
-        width: 100%;
-    } 
-
-    to {
-        width: 0%;
-    }
-}
-
 
 @keyframes animate-height {
     from {
