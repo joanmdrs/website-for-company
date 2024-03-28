@@ -23,7 +23,7 @@ function Reasons(){
         }
     ]
     return (
-        <div className="page-reasons section"> 
+        <div className="page-reasons global-section"> 
             <div className="reasons-title"> 
                 <h2> NOSSOS DIFERENCIAIS </h2>
             </div>

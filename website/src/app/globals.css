@@ -19,7 +19,19 @@ body {
 
 }
   
-.section {
+.global-section {
     height: 100%;
-    margin: 100px;
+    margin: 150px;
+}
+
+.global-title {
+    margin: 0 ;
+    font-size: 25px;
+}
+
+.global-subtitle  {
+    font-size: 17px;
+    margin: 0;
+    color: #919197;
+    font-style: italic;
 }
