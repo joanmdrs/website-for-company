@@ -1,0 +1,10 @@
+.component-logo {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}

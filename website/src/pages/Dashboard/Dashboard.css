@@ -48,8 +48,11 @@
 }
 
 .container-animation h2:nth-child(2) {
-    color: lightgreen;
-    animation: animate 4s ease-in-out infinite;
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  -webkit-background-clip: text; /* Aplica o gradiente apenas ao texto */
+  background-clip: text;
+  color: transparent;    
+  animation: animate 2s ease-in-out infinite;
 }
 
 @keyframes animate {
