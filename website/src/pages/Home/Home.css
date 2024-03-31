@@ -1,62 +1,133 @@
 .section-home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    min-height: 100%;
+    justify-content: space-evenly;
+    overflow: hidden;
+    background-color: #fff;
+
 }
 
 .info-home {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 40px;
-    margin-left: 60px;
-    flex: 1;
-    z-index: 2; /* Ajustar o z-index para colocar a div de informações acima do trapézio */
+    align-items: start;
+    font-family: 'Nunito', sans-serif;
 }
 
-.info-home h1 {
-    font-size: 50px;
+.title-home,
+.text-home {
+    width: 450px;
 }
 
-.info-home p {
-    font-size: 20px;
+.title-home h1 {
+    font-size: 40px;
+    font-weight: 500;
 }
 
-.info-home button {
-    margin-top: 30px;
-    width: fit-content;
+.title-home h1 .differentc-color {
+    color: var(--primary-color);
+}
+
+.title-home h1 .text-background {
+    display: inline-block;
+    transform: rotate(-4deg);
     background-color: var(--primary-color);
-    padding: 20px 30px;
-    color: #ffffff;
+    padding: 10px 20px;
     border-radius: 10px;
-    outline: none;
-    border: none;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+}
+
+.text-home p {
     font-size: 18px;
+    font-weight: 400;
+    color: var(--color-gray);
+}
+
+.button-home button {
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 20px 40px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.image-home {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.trapezoid {
-    position: absolute; /* Posicionar o trapézio absolutamente em relação ao contêiner pai */
-    bottom: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-left: 500px solid transparent;
-    border-bottom: 1000px solid var(--primary-color);
-    z-index: 1; /* Ajustar o z-index para colocar o trapézio abaixo da imagem */
+.image-home .box-img img {
+    width: 350px;
+    height: auto;
 }
 
-.image-home {
-    flex: 1;
+.box-img {
+    z-index: 5;
     position: relative;
+    bottom: 30px;
+}
+
+.box-1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    background-color: var(--second-color);
+    z-index: 3;
+}
+
+.box-2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    transform: rotate(-6deg);
+    background-color: var(--primary-color);
+    margin-left: 30px;
+    z-index: 1;
+}
+
+.box-3 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    background-color: transparent;
+    border: 1px solid var(--color-gray);
+    margin-top: 30px;
+    z-index: 4;
+    
+}
+
+.box-4 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    transform: rotate(-6deg);
+    background-color: transparent;
+    border: 1px solid var(--color-gray);
+    margin-bottom: 20px;
+    margin-left: 50px;
     z-index: 2;
 }
 
-.image-home img {
-    min-width: 80%; 
-    height: auto; 
-}
+
+
+
+

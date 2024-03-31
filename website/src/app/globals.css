@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 :root {
-    --primary-color: #2E9AFE;
-    --second-color: #224589;
-    --third-color: #213764;
-    --black-color: #000000;
-    --white-color: #FFFFFF;
+    --primary-color: #58ACFA;
+    --second-color: #A9F5E1;
+    --color-gray: #585858;
 }
 
 /* 

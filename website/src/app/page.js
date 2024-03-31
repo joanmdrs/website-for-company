@@ -24,6 +24,7 @@ function App() {
             <Layout>
                 
                 <Header />
+                
                 <Content style={{zIndex: '2'}}>
                     <Home />
                     <Courses />
