@@ -24,10 +24,18 @@ function Reasons(){
     ]
     return (
         <div className="page-reasons global-section"> 
-            <div className="reasons-title"> 
-                <h2> NOSSOS DIFERENCIAIS </h2>
-            </div>
+            <div className="reasons-header"> 
+                <div className="reasons-title"> 
+                    <div className="reasons-title-divider"> </div>
+                    <h2> Por quê você deve <br></br> nos escolher ? </h2>
+                </div>
 
+                <div className="reasons-text"> 
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+
+            </div>
+          
             <div className="reasons-content"> 
                 {
                     motivos.map((motivo, index) => (

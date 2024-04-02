@@ -1,5 +1,33 @@
+.page-reasons {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(88, 172, 250, 0.16)
+}
+
+.reasons-header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .reasons-title {
-    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.reasons-title h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.reasons-text p {
+    color: var(--second-text-color);
+}
+
+.reasons-title-divider {
+    background-color: var(--primary-color);
+    width: 20px;
+    height: 80px;
+    border-radius: 40px;
+    margin-right: 20px;
 }
 
 .reasons-content {
@@ -21,7 +49,7 @@
     align-items: center;
     padding: 50px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all 400ms ease;
     margin: 2px;
@@ -39,6 +67,7 @@
     animation-delay: 0s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+
 }
 
 .item-content:hover .border-top {
@@ -75,6 +104,7 @@
     bottom: 0;
     width: 2px;
     height: 0%;
+    border-radius: 10px;
     background-color: #57b9a8;
     background-image: -webkit-gradient(linear, left top, right top, from(#cf3e71), color-stop(50%, #3b79ac), to(#57b9a8));
     background-image: linear-gradient(90deg, #cf3e71, #3b79ac 50%, #57b9a8);
