@@ -27,12 +27,12 @@ function App() {
                 
                 <Content style={{zIndex: '2'}}>
                     <Home />
-                    <Courses />
                     <Reasons />
+                    <Courses />
+                    
 
                     <Presentation />
 
-                    <Dashboard />
 
                 </Content>
 

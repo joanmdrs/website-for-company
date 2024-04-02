@@ -3,7 +3,7 @@
 :root {
     --primary-color: #58ACFA;
     --second-color: #A9F5E1;
-    --color-gray: #585858;
+    --second-text-color: #585858;
 }
 
 /* 
@@ -20,7 +20,7 @@ body {
   
 .global-section {
     height: 100%;
-    margin: 150px;
+    padding: 150px;
 }
 
 .global-title {

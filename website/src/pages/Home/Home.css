@@ -59,7 +59,12 @@
     color: #fff;
     font-size: 18px;
     font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
+
 
 
 .image-home {

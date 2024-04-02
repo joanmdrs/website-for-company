@@ -4,6 +4,8 @@ import "./Home.css"
 import { Button } from 'antd';
 import { IoMdArrowDropright } from "react-icons/io";
 import assetHome from "../../assets/asset-home.png"
+import { IoIosArrowRoundForward } from "react-icons/io";
+
 
 function Home(){
     return (
@@ -16,7 +18,11 @@ function Home(){
                     <p> Uma comunidade com grandes expectativas e alto desempenho acadêmico </p>
                 </div>
                 <div className='button-home'>
-                    <button> Iniciar </button>
+                    <button> 
+                        Iniciar
+                        <IoIosArrowRoundForward size="25px" />
+                       
+                    </button>
                 </div>
       
             </div>

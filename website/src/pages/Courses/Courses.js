@@ -2,65 +2,86 @@ import React from 'react';
 import { FaArrowRightLong } from "react-icons/fa6";
 import "./Courses.css";
 import Card from '../../components/Card/Card.js';
-import assetBusinnes from "../../assets/courses/businnes.png";
-import assetFinances from  "../../assets/courses/finances.png";
-import assetItAndSoftware from "../../assets/courses/it-and-software.png";
-import assetMarketing from "../../assets/courses/marketing.png";
-import assetDesigner from "../../assets/courses/designer.png";
-import assetPhotograph from "../../assets/courses/photograph.png";
 import Image from "next/image";
+import designGrafico from "../../assets/courses/design-grafico.jpg"
+import designUiUx from "../../assets/courses/design-ui-ux.jpg"
+import designGames from "../../assets/courses/design-games.jpg"
+import marketingConteudo from "../../assets/courses/marketing-conteudo.jpg"
+import seo from "../../assets/courses/seo.jpg"
+import midiasSociais from "../../assets/courses/midias-sociais.jpg"
+import desenvolvimentoWeb from "../../assets/courses/desenvolvimento-web.jpg"
+import desenvolvimentoMobile from "../../assets/courses/desenvolvimento-mobile.jpg"
+import desenvolvimentoParaIA from "../../assets/courses/inteligencia-artificial.jpg"
+
+
 
 function Courses() {
     const courses = [
         {
-            title: "Negócios",
-            subtitle: "Aprenda estratégias de negócios",
-            description: "Este curso aborda diversas estratégias e táticas de negócios para impulsionar o sucesso da sua empresa.",
-            modality: "Online",
-            formation: "Certificação",
-            image: <Image alt="Curso de Negócios" src={assetBusinnes} />
+            title: "Design Gráfico",
+            description: "Curso de Design Gráfico focado na criação de elementos visuais para diversos meios de comunicação.",
+            modality: "Presencial ou Online",
+            formation: "Certificado de Conclusão",
+            image:  <Image alt="Design Grafico" src={designGrafico} />
         },
         {
-            title: "Finanças",
-            subtitle: "Gestão financeira eficaz",
-            description: "Aprenda os fundamentos da gestão financeira, desde orçamentos até análise de investimentos.",
-            modality: "Presencial",
-            formation: "Diploma",
-            image: <Image alt="Curso de Finanças" src={assetFinances} />
+            title: "Design UI/UX",
+            description: "Curso de Design de Interface do Usuário (UI) e Experiência do Usuário (UX) abrangendo princípios de design e usabilidade.",
+            modality: "Presencial ou Online",
+            formation: "Certificado de Conclusão",
+            image:  <Image alt="Design UI/UX" src={designUiUx} />
         },
         {
-            title: "TI e Software",
-            subtitle: "Desenvolvimento de software",
-            description: "Este curso abrange programação, desenvolvimento web, aplicativos móveis e muito mais.",
-            modality: "Online",
-            formation: "Certificação",
-            image: <Image alt="Curso de TI e Software" src={assetItAndSoftware} />
+            title: "Design de Games",
+            description: "Curso de Design de Jogos com foco na criação de experiências interativas e narrativas envolventes.",
+            modality: "Presencial ou Online",
+            formation: "Certificado de Conclusão",
+            image:  <Image alt="Design de Games" src={designGames} />
         },
         {
-            title: "Marketing",
-            subtitle: "Estratégias de marketing digital",
-            description: "Aprenda as últimas estratégias de marketing digital, incluindo SEO, PPC e mídias sociais.",
-            modality: "Online",
-            formation: "Certificação",
-            image: <Image alt="Curso de Marketing" src={assetMarketing} />
+            title: "Marketing de Conteúdo",
+            description: "Curso de Marketing Digital com ênfase na criação e distribuição de conteúdo relevante para o público-alvo.",
+            modality: "Presencial ou Online",
+            formation: "Certificado de Conclusão",
+            image:  <Image alt="Marketing de Conteudo" src={marketingConteudo} />
         },
         {
-            title: "Design",
-            subtitle: "Princípios de design gráfico",
-            description: "Explore os fundamentos do design gráfico, incluindo teoria da cor, tipografia e layout.",
-            modality: "Presencial",
-            formation: "Diploma",
-            image: <Image alt="Curso de Design" src={assetDesigner} />
+            title: "SEO",
+            description: "Curso de Otimização de Motores de Busca (SEO) abrangendo técnicas e estratégias para melhorar o posicionamento de websites nos resultados de busca.",
+            modality: "Presencial ou Online",
+            formation: "Certificado de Conclusão",
+            image:  <Image alt="SEO" src={seo} />
         },
         {
-            title: "Fotografia",
-            subtitle: "Técnicas avançadas de fotografia",
-            description: "Este curso ensina técnicas avançadas de fotografia, incluindo composição, iluminação e edição de fotos.",
-            modality: "Presencial",
-            formation: "Diploma",
-            image: <Image alt="Curso de Fotografia" src={assetPhotograph} />
+            title: "Mídias Sociais para Empresas",
+            description: "Curso de Gestão de Mídias Sociais com foco em estratégias de marketing e comunicação para empresas nas redes sociais.",
+            modality: "Presencial ou Online",
+            formation: "Certificado de Conclusão",
+            image:  <Image alt="Mídias Sociais" src={midiasSociais} />
+        },
+        {
+            title: "Desenvolvimento Web",
+            description: "Curso de Desenvolvimento Web abrangendo linguagens de programação e tecnologias para a criação de sites e aplicações web.",
+            modality: "Presencial ou Online",
+            formation: "Certificado de Conclusão",
+            image:  <Image alt="Desenvolvimento Web" src={desenvolvimentoWeb} />
+        },
+        {
+            title: "Desenvolvimento Mobile",
+            description: "Curso de Desenvolvimento de Aplicações Mobile abrangendo plataformas como iOS e Android.",
+            modality: "Presencial ou Online",
+            formation: "Certificado de Conclusão",
+            image:  <Image alt="Desenvolvimento Mobile" src={desenvolvimentoMobile} />
+        },
+        {
+            title: "Desenvolvimento para IA",
+            description: "Curso de Desenvolvimento de Inteligência Artificial abrangendo conceitos e técnicas para a criação de sistemas inteligentes.",
+            modality: "Presencial ou Online",
+            formation: "Certificado de Conclusão",
+            image:  <Image alt="Desenvolvimento para IA" src={desenvolvimentoParaIA} />
         }
     ];
+      
 
     return (
         <div className="courses-section">

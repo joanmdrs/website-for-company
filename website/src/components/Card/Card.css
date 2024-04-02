@@ -21,6 +21,8 @@
 }
 
 .card-image img {
+    width: 350px;
+    height: 350px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
