@@ -1,12 +1,17 @@
 .component-card {
+    position: relative; 
     padding: 0;
     margin: 0;
-    width: min-content;
-    height: auto;
+    width: 300px;
+    height: 400px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     transition: ease-in-out 500ms;
-    position: relative; /* Importante para o posicionamento absoluto do link */
+
 }
   
 .component-card:hover {
@@ -14,60 +19,38 @@
 }
   
 .card-image {
+    position: relative;
+    width: 80%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    position: relative;
 }
 
 .card-image img {
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    opacity: 0.5;
 }
   
-.learn-more-link {
+.card-title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
+    font-size: 20px;
     padding: 10px 20px;
     border-radius: 5px;
-    text-decoration: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.learn-more-link:hover {
-    color: #fff;
-}
+    margin-top: 10px;
+  }
   
   .component-card:hover .learn-more-link {
     opacity: 1; 
   }
   
-  .card-title {
-    width: 70%;
-    height: 40px;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: var(--primary-color);
-    position: relative;
-  }
-  
-  .card-title::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -29.7px; 
-    height: 0;
-    border-style: solid;
-    border-width: 20px 0 20px 30px; 
-    border-color: transparent transparent transparent ; 
-  }
+
   
   .card-title h4 {
     margin: 0;
@@ -92,23 +75,5 @@
 .card-description p {
     font-size: 15px;
     color: #848484;
-}
-  
-
-.card-footer {
-    border-top: 1px solid #e6e6e6;
-    color: #A4A4A4;
-    font-weight: 200;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-  
-.item-footer {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
 }
   

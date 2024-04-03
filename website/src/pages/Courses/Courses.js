@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import { FaArrowRightLong } from "react-icons/fa6";
 import "./Courses.css";
 import Card from '../../components/Card/Card.js';
@@ -12,8 +13,7 @@ import midiasSociais from "../../assets/courses/midias-sociais.jpg"
 import desenvolvimentoWeb from "../../assets/courses/desenvolvimento-web.jpg"
 import desenvolvimentoMobile from "../../assets/courses/desenvolvimento-mobile.jpg"
 import desenvolvimentoParaIA from "../../assets/courses/inteligencia-artificial.jpg"
-
-
+import { useSearchParams } from 'next/navigation';
 
 function Courses() {
     const courses = [
@@ -22,66 +22,82 @@ function Courses() {
             description: "Curso de Design Gráfico focado na criação de elementos visuais para diversos meios de comunicação.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image:  <Image alt="Design Grafico" src={designGrafico} />
+            image: <Image alt="Design Grafico" src={designGrafico} />
         },
         {
             title: "Design UI/UX",
             description: "Curso de Design de Interface do Usuário (UI) e Experiência do Usuário (UX) abrangendo princípios de design e usabilidade.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image:  <Image alt="Design UI/UX" src={designUiUx} />
+            image: <Image alt="Design UI/UX" src={designUiUx} />
         },
         {
             title: "Design de Games",
             description: "Curso de Design de Jogos com foco na criação de experiências interativas e narrativas envolventes.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image:  <Image alt="Design de Games" src={designGames} />
+            image: <Image alt="Design de Games" src={designGames} />
         },
         {
             title: "Marketing de Conteúdo",
             description: "Curso de Marketing Digital com ênfase na criação e distribuição de conteúdo relevante para o público-alvo.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image:  <Image alt="Marketing de Conteudo" src={marketingConteudo} />
+            image: <Image alt="Marketing de Conteudo" src={marketingConteudo} />
         },
         {
             title: "SEO",
             description: "Curso de Otimização de Motores de Busca (SEO) abrangendo técnicas e estratégias para melhorar o posicionamento de websites nos resultados de busca.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image:  <Image alt="SEO" src={seo} />
+            image: <Image alt="SEO" src={seo} />
         },
         {
             title: "Mídias Sociais para Empresas",
             description: "Curso de Gestão de Mídias Sociais com foco em estratégias de marketing e comunicação para empresas nas redes sociais.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image:  <Image alt="Mídias Sociais" src={midiasSociais} />
+            image: <Image alt="Mídias Sociais" src={midiasSociais} />
         },
         {
             title: "Desenvolvimento Web",
             description: "Curso de Desenvolvimento Web abrangendo linguagens de programação e tecnologias para a criação de sites e aplicações web.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image:  <Image alt="Desenvolvimento Web" src={desenvolvimentoWeb} />
+            image: <Image alt="Desenvolvimento Web" src={desenvolvimentoWeb} />
         },
         {
             title: "Desenvolvimento Mobile",
             description: "Curso de Desenvolvimento de Aplicações Mobile abrangendo plataformas como iOS e Android.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image:  <Image alt="Desenvolvimento Mobile" src={desenvolvimentoMobile} />
+            image: <Image alt="Desenvolvimento Mobile" src={desenvolvimentoMobile} />
         },
         {
             title: "Desenvolvimento para IA",
             description: "Curso de Desenvolvimento de Inteligência Artificial abrangendo conceitos e técnicas para a criação de sistemas inteligentes.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image:  <Image alt="Desenvolvimento para IA" src={desenvolvimentoParaIA} />
+            image: <Image alt="Desenvolvimento para IA" src={desenvolvimentoParaIA} />
         }
     ];
-      
+
+    const [turn, setTurn] = useState()
+    const [slide, setSlide] = useState('slide-1')
+
+    const splitCoursesIntoGroups = (courses, groupSize) => {
+        const groups = [];
+        for (let i = 0; i < courses.length; i += groupSize) {
+            groups.push(courses.slice(i, i + groupSize));
+        }
+        return groups;
+    };
+
+    const courseGroups = splitCoursesIntoGroups(courses, 3);
+
+    const handleChangeSlide = ({target: {id}}) => {
+        setSlide(id)
+    }
 
     return (
         <div className="courses-section">
@@ -91,23 +107,50 @@ function Courses() {
                     <p> Estes são alguns dos diversos cursos oferecidos por nossa empresa </p>
                 </div>
 
-                <div className="view-all-courses"> 
+                <div className="view-all-courses">
                     <span> VER TODOS OS CURSOS <FaArrowRightLong /> </span>
                 </div>
-            </div>     
+            </div>
             <div className='courses-content'>
-                {courses.map((course, index) => (
-                    <Card 
-                        key={index} 
-                        image={course.image} 
-                        title={course.title}
-                        subtitle={course.subtitle}
-                        description={course.description}
-                        formation={course.formation}
-                        modality={course.modality}
+                <div className={`courses-carousel ${slide}`}>
+                    {courseGroups.map((group, index) => (
+                        <div key={index} className="carousel-group">
+                            {group.map((course, idx) => (
+                                <Card
+                                    key={idx}
+                                    image={course.image}
+                                    title={course.title}
+                                    subtitle={course.subtitle}
+                                    description={course.description}
+                                    formation={course.formation}
+                                    modality={course.modality}
+                                />
+                            ))}
+                        </div>
+                    ))}
+                </div>
+
+                <div className='buttons-slide-carousel'>
+                    <div 
+                        id='slide-1' 
+                        onClick={handleChangeSlide}
+                        className={`button-slide ${slide === "slide-1" ? "button-slide-select" : ""}`}
                     />
-                ))}
-            </div>      
+
+                    <div 
+                        id='slide-2' 
+                        onClick={handleChangeSlide}
+                        className={`button-slide ${slide === "slide-2" ? "button-slide-select" : ""}`}
+                    />
+
+                    <div 
+                        id='slide-3' 
+                        onClick={handleChangeSlide}
+                        className={`button-slide ${slide === "slide-3" ? "button-slide-select" : ""}`}
+                    />
+                </div>
+
+            </div>
         </div>
     );
 }

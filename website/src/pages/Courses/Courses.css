@@ -1,13 +1,14 @@
 .courses-section {
-    height: 100%;
-    margin: 100px;
-    margin-top:80px;
+    overflow: hidden;
+    height: auto;
+    font-family: 'Nunito', sans-serif;
 }
 
 .courses-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    padding: 150px
 }
 
 .courses-header .courses-info h1 {
@@ -25,8 +26,57 @@
 
 .courses-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
+    flex-direction: column;
+    height: auto;
+}
+
+.courses-carousel {
+    display: flex;
+    height: auto;
+    transition: all 1s ease-in-out ;
+
+}
+
+.courses-carousel.slide-1 {
+    margin-left: 0%;
+}
+
+.courses-carousel.slide-2 {
+    transform: translateX(-100%) ;
+}
+
+.courses-carousel.slide-3 {
+    transform: translateX(-200%);
+}
+  
+.carousel-group {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    height: auto;
+    gap: 20px;
+}
+
+.buttons-slide-carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     margin-top: 40px;
+}
+
+.button-slide {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #585858;
+    cursor: pointer;
+}
+
+.button-slide-select {
+    background-color: var(--primary-color);
+    border: none;
 }
