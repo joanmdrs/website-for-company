@@ -12,6 +12,7 @@ import Presentation from '@/pages/Presentation/Presentation';
 import Dashboard from '@/pages/Dashboard/Dashboard';
 import Menu from '@/components/Menu/Menu';
 import Header from '@/components/Header/Header';
+import Feedback from '@/pages/Feedback/FeedBack';
 
 function App() {
     return (
@@ -29,6 +30,7 @@ function App() {
                     <Home />
                     <Reasons />
                     <Courses />
+                    <Feedback />
                     
 
                     <Presentation />

@@ -118,7 +118,6 @@ function Courses() {
         }
     ];
 
-    const [turn, setTurn] = useState()
     const [slide, setSlide] = useState('slide-1')
 
     const splitCoursesIntoGroups = (courses, groupSize) => {
