@@ -19,66 +19,102 @@ function Courses() {
     const courses = [
         {
             title: "Design Gráfico",
+            subtitle: "Design Gráfico",
             description: "Curso de Design Gráfico focado na criação de elementos visuais para diversos meios de comunicação.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image: <Image alt="Design Grafico" src={designGrafico} />
+            image: <Image alt="Design Grafico" src={designGrafico} />,
+            duration: "12 hrs 30 mins",
+            lessons: "24 lessons",
+            price: "200"
         },
         {
             title: "Design UI/UX",
+            subtitle: "Design UI/UX",
             description: "Curso de Design de Interface do Usuário (UI) e Experiência do Usuário (UX) abrangendo princípios de design e usabilidade.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image: <Image alt="Design UI/UX" src={designUiUx} />
+            image: <Image alt="Design UI/UX" src={designUiUx} />,
+            duration: "12 hrs 30 mins",
+            lessons: "24 lessons",
+            price: "200"
         },
         {
             title: "Design de Games",
+            subtitle: "Design de Games",
             description: "Curso de Design de Jogos com foco na criação de experiências interativas e narrativas envolventes.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image: <Image alt="Design de Games" src={designGames} />
+            image: <Image alt="Design de Games" src={designGames} />,
+            duration: "12 hrs 30 mins",
+            lessons: "24 lessons",
+            price: "200"
         },
         {
             title: "Marketing de Conteúdo",
+            subtitle: "Marketing de Conteúdo",
             description: "Curso de Marketing Digital com ênfase na criação e distribuição de conteúdo relevante para o público-alvo.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image: <Image alt="Marketing de Conteudo" src={marketingConteudo} />
+            image: <Image alt="Marketing de Conteudo" src={marketingConteudo} />,
+            duration: "12 hrs 30 mins",
+            lessons: "24 lessons",
+            price: "200"
         },
         {
-            title: "SEO",
+            title: "CURSO SEO",
+            subtitle: 'Curso de SEO',
             description: "Curso de Otimização de Motores de Busca (SEO) abrangendo técnicas e estratégias para melhorar o posicionamento de websites nos resultados de busca.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image: <Image alt="SEO" src={seo} />
+            image: <Image alt="SEO" src={seo} />,
+            duration: "12 hrs 30 mins",
+            lessons: "24 lessons",
+            price: "200"
         },
         {
             title: "Mídias Sociais para Empresas",
+            subtitle: "Mídias Sociais para Empresas",
             description: "Curso de Gestão de Mídias Sociais com foco em estratégias de marketing e comunicação para empresas nas redes sociais.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image: <Image alt="Mídias Sociais" src={midiasSociais} />
+            image: <Image alt="Mídias Sociais" src={midiasSociais} />,
+            duration: "12 hrs 30 mins",
+            lessons: "24 lessons",
+            price: "200"
         },
         {
             title: "Desenvolvimento Web",
+            subtitle: "Desenvolvimento Web",
             description: "Curso de Desenvolvimento Web abrangendo linguagens de programação e tecnologias para a criação de sites e aplicações web.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image: <Image alt="Desenvolvimento Web" src={desenvolvimentoWeb} />
+            image: <Image alt="Desenvolvimento Web" src={desenvolvimentoWeb} />,
+            duration: "12 hrs 30 mins",
+            lessons: "24 lessons",
+            price: "200"
         },
         {
             title: "Desenvolvimento Mobile",
+            subtitle: "Desenvolvimento Mobile",
             description: "Curso de Desenvolvimento de Aplicações Mobile abrangendo plataformas como iOS e Android.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image: <Image alt="Desenvolvimento Mobile" src={desenvolvimentoMobile} />
+            image: <Image alt="Desenvolvimento Mobile" src={desenvolvimentoMobile} />,
+            duration: "12 hrs 30 mins",
+            lessons: "24 lessons",
+            price: "200"
         },
         {
             title: "Desenvolvimento para IA",
+            subtitle: "Desenvolvimento para IA",
             description: "Curso de Desenvolvimento de Inteligência Artificial abrangendo conceitos e técnicas para a criação de sistemas inteligentes.",
             modality: "Presencial ou Online",
             formation: "Certificado de Conclusão",
-            image: <Image alt="Desenvolvimento para IA" src={desenvolvimentoParaIA} />
+            image: <Image alt="Desenvolvimento para IA" src={desenvolvimentoParaIA} />,
+            duration: "12 hrs 30 mins",
+            lessons: "24 lessons",
+            price: "200"
         }
     ];
 
@@ -103,8 +139,7 @@ function Courses() {
         <div className="courses-section">
             <div className="courses-header">
                 <div className="courses-info">
-                    <h1> Cursos populares </h1>
-                    <p> Estes são alguns dos diversos cursos oferecidos por nossa empresa </p>
+                    <h2> NOSSOS CURSOS MAIS POPULARES</h2>
                 </div>
 
                 <div className="view-all-courses">
@@ -122,8 +157,9 @@ function Courses() {
                                     title={course.title}
                                     subtitle={course.subtitle}
                                     description={course.description}
-                                    formation={course.formation}
-                                    modality={course.modality}
+                                    duration={course.duration}
+                                    lessons={course.lessons}
+                                    price={course.price}
                                 />
                             ))}
                         </div>
