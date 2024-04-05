@@ -12,6 +12,7 @@ import Header from '@/components/Header/Header';
 import Feedback from '@/pages/Feedback/FeedBack';
 import About from '@/pages/About/About';
 import Contact from '@/pages/Contact/Contact';
+import Dashboard from '@/pages/Dashboard/Dashboard';
 
 function App() {
     return (
@@ -27,12 +28,12 @@ function App() {
                 
                 <Content style={{zIndex: '2'}}>
                     <Home />
+                    <Dashboard />
                     <Reasons />
                     <Courses />
                     <Feedback />
                     <About />
                     <Contact />
-
                 </Content>
 
                 <Footer>

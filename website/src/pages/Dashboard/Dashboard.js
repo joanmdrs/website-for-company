@@ -1,57 +1,42 @@
 import "./Dashboard.css";
+import { PiStudentBold } from "react-icons/pi";
+import { LiaCertificateSolid } from "react-icons/lia";
+import { PiChalkboardTeacher } from "react-icons/pi";
+import { PiBag } from "react-icons/pi";
 import img from "../../assets/asset-background-dashboard.jpg";
+
 function Dashboard() {
     return (
-        <div className="dashboard-section">
-            <div className="dashboard-content">
-
-                <div className="item-dashboard"> 
-                    <div className="container-animation">
-                        <h2> 60 </h2>
-                        <h2> 60 </h2>
-                    </div>
-
-                    <div className="metric"> 
-                        Professores
-                    </div>
+        <section className="dashboard-section">
+            <div className="dashboard-item"> 
+                <PiStudentBold />
+                <div>
+                    <h2> 500K +</h2>
+                    <h3> Alunos </h3>
                 </div>
-
-                <div className="item-dashboard"> 
-                    <div className="container-animation">
-                        <h2> +1K </h2>
-                        <h2> +1K </h2>
-                    </div>
-
-                    <div className="metric"> 
-                        Alunos
-                    </div>
-                </div>
-                
-                <div className="item-dashboard"> 
-                    <div className="container-animation">
-                        <h2> 12 </h2>
-                        <h2> 12 </h2>
-                    </div>
-
-                    <div className="metric"> 
-                        Cursos
-                    </div>
-                </div>
-
-                <div className="item-dashboard"> 
-                    <div className="container-animation">
-                        <h2> 20 </h2>
-                        <h2> 20 </h2>
-                    </div>
-
-                    <div className="metric"> 
-                        Anos de Experiência
-                    </div>
-                </div>
-
-            
             </div>
-        </div>
+            <div className="dashboard-item"> 
+                <PiBag />
+                <div>
+                    <h2> 100 +</h2>
+                    <h3> Cursos </h3>
+                </div>
+            </div>
+            <div className="dashboard-item"> 
+                <PiChalkboardTeacher />
+                <div>
+                    <h2> 200 +</h2>
+                    <h3> Professores </h3>
+                </div>
+            </div>
+            <div className="dashboard-item"> 
+                <LiaCertificateSolid />
+                <div>
+                    <h2> 20 +</h2>
+                    <h3> Anos de Experiência </h3>
+                </div>
+            </div>
+        </section>
     );
 }
 
