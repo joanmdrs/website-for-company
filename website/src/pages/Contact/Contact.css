@@ -1,0 +1,151 @@
+.contact-section {
+    background-color: rgba(88, 172, 250, 0.16);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    transform: rotate(-4deg);
+}
+
+.contact-title h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    width: fit-content;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contact-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 5%;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.contact-form {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contact-form div {
+    width: 70%;
+}
+
+.contact-form div h4 {
+    font-size: 15px;
+}
+
+.contact-form form {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+
+.contact-form form input, 
+.contact-form form textarea {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #FFFFFF;
+    padding: 15px;
+    color: #585858;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contact-form form button {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    font-family: 'Nunito', sans-serif;
+    color: #FFFFFF;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contact-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contact-info div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-info div svg {
+    font-size: 30px;
+}
+
+.contact-image {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-image img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    z-index: 3;
+
+}
+
+.contact-image .circle-1 {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: rgba(88, 172, 250, 0.38);
+    z-index: 2;
+}
+
+.contact-image .circle-2 {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-right: 50px;
+    background-color: rgba(88, 172, 250, 0.16);
+    z-index: 1;
+}

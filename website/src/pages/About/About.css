@@ -1,35 +1,37 @@
 .about-section {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 .about-title {
-    background-color: var(--primary-color);
-    padding: 5px 40px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    width: fit-content;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin: 5%;
-    margin-left: 0;
-    margin-bottom: 0;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-title h2 {
     font-size: 20px;
     font-family:"Montserrat", sans-serif;
-    color: #FFFFFF;
-    font-weight: 400;
+    font-weight: 600;
+}
+
+.about-title div {
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
 }
 
 .about-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: auto;
     position: relative;
     padding: 5%;
 
@@ -89,7 +91,7 @@
     margin-left: 30px;
     position: absolute;
     border-radius: 20px;
-    background-color: var(--second-color);
+    background-color: rgba(88, 172, 250, 0.5);
     width: 420px;
     height: 330px;
     transform: rotate(4deg);
@@ -102,8 +104,7 @@
     margin-left: 30px;
     position: absolute;
     border-radius: 20px;
-    border: 1px solid #585858;
-    background-color: transparent;
+    background-color: rgba(88, 172, 250, 0.2);
     width: 420px;
     height: 330px;
     transform: rotate(-6deg);

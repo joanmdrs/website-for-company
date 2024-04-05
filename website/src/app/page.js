@@ -11,6 +11,7 @@ import Reasons from '@/pages/Reasons/Reasons';
 import Header from '@/components/Header/Header';
 import Feedback from '@/pages/Feedback/FeedBack';
 import About from '@/pages/About/About';
+import Contact from '@/pages/Contact/Contact';
 
 function App() {
     return (
@@ -30,6 +31,7 @@ function App() {
                     <Courses />
                     <Feedback />
                     <About />
+                    <Contact />
 
                 </Content>
 

@@ -6,6 +6,7 @@ function About(){
         <section className="about-section">
             <div className="about-title">
                 <h2>QUEM NÓS SOMOS ?</h2>
+                <div> </div>
             </div>
 
             <div className="about-content"> 
