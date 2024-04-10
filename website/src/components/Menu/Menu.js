@@ -5,9 +5,11 @@ function Menu () {
 
         <div className="component-menu"> 
             <ul>
-                <li><a href="default.asp">Home</a></li>
-                <li><a href="news.asp">Cursos</a></li>
-                <li><a href="contact.asp">Sobre nós</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#"> Blog </a></li>
             </ul>
         </div>
 

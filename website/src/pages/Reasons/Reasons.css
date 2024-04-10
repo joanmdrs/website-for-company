@@ -1,33 +1,32 @@
-.page-reasons {
+.reasons-section {
     font-family: 'Nunito', sans-serif;
-    background-color: rgba(88, 172, 250, 0.16)
-}
-
-.reasons-header {
-    display: flex;
-    justify-content: space-between;
+    background-color: rgba(88, 172, 250, 0.16);
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .reasons-title {
-    display: flex;
-    align-items: center;
+    width: 100%;
 }
 
 .reasons-title h2 {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.reasons-text p {
-    color: var(--second-text-color);
-}
-
-.reasons-title-divider {
+.reasons-title h2 span {
+    display: inline-block;
     background-color: var(--primary-color);
-    width: 20px;
-    height: 80px;
-    border-radius: 40px;
-    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #FFFFFF;
+    transform: rotate(-4deg);
+    width: fit-content;
 }
 
 .reasons-content {
@@ -47,8 +46,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-    background-color: #fff;
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all 400ms ease;
@@ -58,10 +59,11 @@
 
 .item-content:hover {
     transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 
 
-.item-content:hover .border-left {
+/* .item-content:hover .border-left {
     animation-name: animate-height;
     animation-duration: 300ms;
     animation-delay: 0s;
@@ -162,4 +164,4 @@
     to {
         height: 100%;
     }
-}
+} */

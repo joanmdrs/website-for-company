@@ -14,6 +14,12 @@
     padding-left: 8%;
 }
 
+.feedback-title h2 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
 .feedback-title span {
     background-color: var(--primary-color);
     color: #FFFFFF;

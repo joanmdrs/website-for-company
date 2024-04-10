@@ -7,7 +7,6 @@ import { Footer } from 'antd/es/layout/layout';
 import Home from '@/pages/Home/Home';
 import Courses from '@/pages/Courses/Courses';
 import Reasons from '@/pages/Reasons/Reasons';
-
 import Header from '@/components/Header/Header';
 import Feedback from '@/pages/Feedback/FeedBack';
 import About from '@/pages/About/About';

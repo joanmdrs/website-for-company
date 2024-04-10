@@ -1,10 +1,8 @@
 import assetHomeImage from '../../assets/asset-home.png';
 import Image from 'next/image';
 import "./Home.css"
-import { Button } from 'antd';
-import { IoMdArrowDropright } from "react-icons/io";
 import assetHome from "../../assets/asset-home.png"
-import { IoIosArrowRoundForward } from "react-icons/io";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 
 function Home(){
@@ -20,7 +18,7 @@ function Home(){
                 <div className='button-home'>
                     <button> 
                         Iniciar
-                        <IoIosArrowRoundForward size="25px" />
+                        <FaArrowRightLong />
                        
                     </button>
                 </div>

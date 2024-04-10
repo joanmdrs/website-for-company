@@ -7,7 +7,7 @@ import img from "../../assets/asset-background-dashboard.jpg";
 
 function Dashboard() {
     return (
-        <section className="dashboard-section">
+        <div className="dashboard-section">
             <div className="dashboard-item"> 
                 <PiStudentBold />
                 <div>
@@ -36,7 +36,7 @@ function Dashboard() {
                     <h3> Anos de Experiência </h3>
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
 

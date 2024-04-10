@@ -1,6 +1,6 @@
 .component-logo {
-    width: 100px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 5px;
     background-color: var(--primary-color);
     display: flex;

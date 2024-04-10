@@ -40,7 +40,7 @@
     padding: 10px 20px;
     border-radius: 10px;
     color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .text-home p {
@@ -50,19 +50,22 @@
 }
 
 .button-home button {
+    cursor: pointer;
     margin-top: 20px;
     border: none;
     outline: none;
     border-radius: 10px;
-    padding: 20px 40px;
+    padding: 20px 30px;
     background-color: var(--primary-color);
     color: #fff;
     font-size: 18px;
     font-family: 'Nunito', sans-serif;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
 }
 
 
@@ -91,7 +94,7 @@
     height: 300px;
     border-radius: 20px;
     transform: rotate(45deg);
-    background-color: var(--second-color);
+    background-color: rgba(75, 172, 250, 0.5);
     z-index: 3;
 }
 
@@ -101,8 +104,7 @@
     height: 300px;
     border-radius: 20px;
     transform: rotate(-6deg);
-    background-color: var(--primary-color);
-    margin-left: 30px;
+    background-color:  rgba(75, 172, 250, 0.2);
     z-index: 1;
 }
 
@@ -113,7 +115,7 @@
     border-radius: 20px;
     transform: rotate(45deg);
     background-color: transparent;
-    border: 1px solid #585858;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     margin-top: 30px;
     z-index: 4;
     
@@ -126,7 +128,7 @@
     border-radius: 20px;
     transform: rotate(-6deg);
     background-color: transparent;
-    border: 1px solid #585858;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     margin-left: 50px;
     z-index: 2;

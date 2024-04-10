@@ -1,39 +1,32 @@
 import "./Reasons.css"
-import asset1 from "../../assets/reasons/1.png"
-import asset2 from "../../assets/reasons/2.png"
-import asset3 from "../../assets/reasons/3.png"
+import assetAcademicExcelence from "../../assets/reasons/academic-excellence.png"
+import assetProfessionalDevelopment from "../../assets/reasons/professional-development.png"
+import assetIntegratedCommunity from "../../assets/reasons/integrated-community.png"
+
 import Image from "next/image"
 
 function Reasons(){
     const motivos = [
         {   
-            image: <Image src={asset1} width={150} />,
+            image: <Image src={assetAcademicExcelence} width={100} />,
             title: "Excelência Acadêmica",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         },
         {
-            image: <Image src={asset2} width={150}/>,
+            image: <Image src={assetProfessionalDevelopment} width={100}/>,
             title: "Desenvolvimento Profissional",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         },
         {
-            image: <Image src={asset3} width={150}/>,
+            image: <Image src={assetIntegratedCommunity} width={100}/>,
             title: "Comunidade integrada",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         }
     ]
     return (
-        <div className="page-reasons global-section"> 
-            <div className="reasons-header"> 
-                <div className="reasons-title"> 
-                    <div className="reasons-title-divider"> </div>
-                    <h2> Por quê você deve <br></br> nos escolher ? </h2>
-                </div>
-
-                <div className="reasons-text"> 
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-
+        <section className="reasons-section"> 
+            <div className="reasons-title"> 
+                <h2> POR QUÊ <span>VOCÊ</span> DEVE NOS ESCOLHER ? </h2>
             </div>
           
             <div className="reasons-content"> 
@@ -60,7 +53,7 @@ function Reasons(){
                     ))
                 }
             </div>
-        </div>
+        </section>
     )
     
 }
