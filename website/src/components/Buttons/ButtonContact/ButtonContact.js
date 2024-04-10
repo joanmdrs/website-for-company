@@ -1,18 +1,19 @@
+import {Button} from 'antd'
+
 function ButtonContact (){
 
     return (
-        <a style={{
-            padding: "10px 30px", 
+        <Button type='default' style={{
+            border: 'none',
             borderRadius: "10px",
-            backgroundColor: "#fff",
-            outline: 'none',
-            color: "#000",
-            fontSize: "15px",
+            padding: '20px 30px !important',
+            display: 'flex', 
+            justifyContent: 'center',
+            alignItems: 'center',
             fontFamily: 'Nunito, sans-serif',
-            fontWeight: "500",
             boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"
 
-        }}> Contato </a>
+        }}> Contato </Button>
     )
 }
 

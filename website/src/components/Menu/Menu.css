@@ -1,68 +1,9 @@
-.component-menu ul {
-    display: flex;
-    gap: 50px;
-    list-style-type: none;
+.ant-layout-header .ant-menu {
+    flex: 1;
     margin: 0;
-    padding: 0;
-}
-
-.component-menu li {
-    display: flex;
-    justify-content: space-between;
-    font-family: "Nunito", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-.component-menu li a {
-    color: #585858; 
     border: none;
-    position: relative;
-}
-
-@keyframes border-bottom-animation {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%; 
-    }
-}
-
-@keyframes border-bottom-disappear {
-    from {
-        width: 100%;
-    }
-
-    to {
-        width: 0;
-    }
-}
-
-.component-menu li a::after {
-    content: ''; 
-    position: absolute;
-    top: 100%;
-    bottom: 0; 
-    left: 0;
-    width: 0; 
-    height: 3px;
-    border-radius: 3px;
-    background-color: var(--primary-color);
-}
-
-.component-menu li a:hover::after {
-    animation-name: border-bottom-animation;
-    animation-timing-function: linear;
-    animation-duration: 400ms;
-    animation-fill-mode: forwards;
-}
-
-.component-menu li a:not(:hover)::after {
-    animation-name: border-bottom-disappear;
-    animation-timing-function: linear;
-    animation-duration: 400ms;
-    animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
 }

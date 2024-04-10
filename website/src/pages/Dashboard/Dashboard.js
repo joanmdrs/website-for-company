@@ -1,11 +1,29 @@
+'use client'
 import "./Dashboard.css";
 import { PiStudentBold } from "react-icons/pi";
 import { LiaCertificateSolid } from "react-icons/lia";
 import { PiChalkboardTeacher } from "react-icons/pi";
 import { PiBag } from "react-icons/pi";
-import img from "../../assets/asset-background-dashboard.jpg";
+import { useEffect } from "react";
+
 
 function Dashboard() {
+
+    useEffect(() => {
+        const dashboardItems = document.querySelectorAll(".dashboard-item")
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle('show', entry.isIntersecting)
+            })
+        })
+
+        console.log(dashboardItems)
+
+        dashboardItems.forEach(dashboard => {
+            observer.observe(dashboard)
+        })
+    }, [])
+
     return (
         <div className="dashboard-section">
             <div className="dashboard-item"> 

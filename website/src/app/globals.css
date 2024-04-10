@@ -21,6 +21,8 @@ body {
 
 .ant-layout {
     overflow: hidden;
+    background-color: #FFFFFF;
+    z-index: 0;
 }
   
 .global-section {

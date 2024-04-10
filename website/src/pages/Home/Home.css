@@ -1,21 +1,20 @@
 .section-home {
-    position: relative;
     height: 100vh;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    overflow: hidden;
+    margin: 0;
     background-color: #fff;
-
+    display: flex;
+    position: relative;
 }
 
 .info-home {
     position: relative;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    padding-left: 10%;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -27,6 +26,7 @@
 .title-home h1 {
     font-size: 40px;
     font-weight: 500;
+    animation: fade-left 1s linear forwards;
 }
 
 .title-home h1 .differentc-color {
@@ -44,97 +44,95 @@
 }
 
 .text-home p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: #585858;
+    animation: fade-left 1.2s linear forwards;
 }
 
-.button-home button {
-    cursor: pointer;
+.home-buttons {
+    display: flex;
+    gap: 20px;
     margin-top: 20px;
+}
+
+.home-buttons button {
+    width: 160px;
+    height: 60px;
     border: none;
-    outline: none;
     border-radius: 10px;
-    padding: 20px 30px;
-    background-color: var(--primary-color);
-    color: #fff;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 15px;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+    animation: fade-left 1.3s linear forwards;
+
 }
 
 
+.get-started {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.watch-video {
+    background-color: transparent;
+    border: 1px solid var(--primary-color) !important;
+    color: var(--primary-color);
+}
 
 .image-home {
     position: relative;
+    width: 60%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.image-home .box-img img {
-    width: 350px;
-    height: auto;
-}
-
 .box-img {
-    z-index: 5;
     position: relative;
-    bottom: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: rgb(22,119,255);
+    background: radial-gradient(circle, rgba(22,119,255,1) 0%, rgba(255,255,255,1) 100%);
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+    animation: fade-right 1s linear forwards;
+
 }
 
-.box-1 {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    transform: rotate(45deg);
-    background-color: rgba(75, 172, 250, 0.5);
-    z-index: 3;
-}
-
-.box-2 {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    transform: rotate(-6deg);
-    background-color:  rgba(75, 172, 250, 0.2);
-    z-index: 1;
-}
-
-.box-3 {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    transform: rotate(45deg);
-    background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    margin-top: 30px;
-    z-index: 4;
-    
-}
-
-.box-4 {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    transform: rotate(-6deg);
-    background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-    margin-left: 50px;
-    z-index: 2;
+.box-img img {
+    position: relative;
+    width: 70%;
+    height: auto;
+    animation: fade-right 2s linear forwards;
 }
 
 
+@keyframes fade-left {
+    0% {
+        transform: translateX(-1000px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
 
 
+@keyframes fade-right {
+    0% {
+        transform: translateX(1000px);
+    }
 
+    100% {
+        transform: translateX(0);
+    }
+}

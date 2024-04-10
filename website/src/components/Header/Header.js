@@ -1,34 +1,32 @@
-'use client'
-import { useEffect, useState } from "react"
 import ButtonContact from "../Buttons/ButtonContact/ButtonContact"
 import Logo from "../Logo/Logo"
-import Menu from "../Menu/Menu"
 import "./Header.css"
+import ButtonTheme from "../Buttons/ButtonTheme/ButtonTheme"
+import CustomMenu from "../Menu/Menu"
+import React from 'react';
+import {Layout } from 'antd'
+const {Header} = Layout
+function CustomHeader(){
 
-function Header(){
 
-    const [scrollPosition, setScrollPosition] = useState(0);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const currentPosition = window.scrollY;
-            setScrollPosition(currentPosition);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
     return (
 
-        <div className={`component-header ${scrollPosition > 100 ? 'header-shadow' : ''}`}> 
+        <Header className="component-header"> 
             <Logo />
-            <Menu />
-            <ButtonContact />
-        </div>
+            <CustomMenu />
+            <div style={{
+                width: "25%",
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                gap: '10px'
+            }}>
+                <ButtonTheme />
+                <ButtonContact />
+
+            </div>
+        </Header>
     )
 }
 
-export default Header
+export default CustomHeader
