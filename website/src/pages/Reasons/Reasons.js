@@ -1,8 +1,26 @@
+'use client'
 import "./Reasons.css";
 import Image from "next/image";
 import { motivos } from "./data/dataReasons";
+import { useEffect } from "react";
 
 function Reasons() {
+
+    useEffect(() => {
+        const reasonsItems = document.querySelectorAll(".item-content")
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle('show', entry.isIntersecting)
+            })
+        })
+
+
+        reasonsItems.forEach(reason => {
+            observer.observe(reason)
+        })
+    }, [])
+
+
     return (
         <section className="reasons-section">
             <div className="reasons-title">
