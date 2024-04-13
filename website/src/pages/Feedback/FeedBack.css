@@ -3,24 +3,30 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
-    padding: 5%;
+    height: auto;
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: rgba(88, 172, 250, 0.16);
 }
 
-.feedback-title {
-    margin-bottom: 50px;
-    width: 100%;
-    padding-left: 8%;
+.feedback-header {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5%;
 }
 
-.feedback-title h2 {
-    font-size: 20px;
+.feedback-header h2 {
+    font-size: 25px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
-.feedback-title span {
+.feedback-header span {
     background-color: var(--primary-color);
     color: #FFFFFF;
     padding: 10px 20px;
@@ -30,57 +36,146 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.feedback-header p {
+    font-size: 15px;
+}
+/* .feedback-title button {
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-color);
+    background-color: transparent;
+
+} */
+
 .feedback-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     width: 100%;
     height: auto;
-    gap: 5%;
-}
-
-.feedback-content .feedback-item {
-    display: flex;
-    width: 40%;
-    height: 150px;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.feedback-content:first-of-type(div) {
-    height: 150px;
-}
-
-.feedback-item img {
-    width: auto;
-    height: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.feedback-details {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     gap: 20px;
 }
 
-.feedback-details div:nth-child(1){
-    color: #585858;
+.feedback-emphasis {
+    position: relative;
+    transition: opacity 1s ease-in-out;
 }
 
-.feedback-details div:nth-child(2){
-    color: #000000;
-    font-weight: bold;
-    font-size: 15px;
+.feedback-emphasis img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
 }
 
-.feedback-details div:nth-child(3) {
+.icon-play {
     display: flex;
-    gap: 10px;
+    justify-content: center;
     align-items: center;
+    position: absolute;
+    font-size: 50px;
+    color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.feedback-info {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.feedback-info h3,
+.feedback-info h4, 
+.feedback-info p {
+    margin: 0;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.feedback-info .feedback-autor {
+    color: var(--primary-color);
     font-weight: 600;
-    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.feedback-info .feedback-course {
+    color: #A4A4A4;
+    font-weight: 400;
+}
+
+.feedback-info .feedback-stars {
+    display: flex;
+    align-items: center;
+    color: gold; /* Cor das estrelas */
+}
+
+.feedback-info .feedback-stars svg {
+    font-size: 20px; /* Tamanho das estrelas */
+}
+
+.feedback-info .feedback-title {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.feedback-info .feedback-comment {
+    color: #424242;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.other-feedbacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.feedback-item {
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+    border: 2px solid var(--primary-color);
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+.box-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.box-image img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    object-position: center; 
+}
+
+.box-autor h5,
+.box-autor h6 {
+    margin: 0;
+    
 }
