@@ -11,19 +11,19 @@ function Card({
     lessons, 
     price }) {
 
+    const limitText = (text, maxLength) => {
+        return text.slice(0, maxLength) + "...";
+    }
+
     return (
         <div className="component-card">
             <div className="card-image"> 
                 {image}
-                <div className="card-fundo"></div>
-                <div className="card-title">
-                    <h4> {title} </h4>
-                </div>
             </div>       
 
             <div className="card-description">
-                <h4> {subtitle} </h4>
-                <p>  {description} </p>
+                <h3> { limitText(title, 50)} </h3>
+                <p>  { limitText(description, 100)} </p>
             </div>
 
             <div className="card-footer">
@@ -32,7 +32,7 @@ function Card({
                         <FiClock/> {duration}
                     </p>
                     <p>
-                        <IoDocumentTextOutline/> {lessons}
+                        <IoDocumentTextOutline/> {lessons} atividades
                     </p>
                 </div>
                 <div className="card-price">

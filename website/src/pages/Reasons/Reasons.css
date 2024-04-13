@@ -64,7 +64,6 @@
 }
 
 .item-content:hover{
-    transform: translateY(-10px);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 
