@@ -3,18 +3,9 @@ import React, { useState } from 'react';
 import { FaArrowRightLong } from "react-icons/fa6";
 import "./Courses.css";
 import Card from '../../components/Card/Card.js';
-import Image from "next/image";
-import designGrafico from "../../assets/courses/design-grafico.jpg"
-import designUiUx from "../../assets/courses/design-ui-ux.jpg"
-import designGames from "../../assets/courses/design-games.jpg"
-import marketingConteudo from "../../assets/courses/marketing-conteudo.jpg"
-import seo from "../../assets/courses/seo.jpg"
-import midiasSociais from "../../assets/courses/midias-sociais.jpg"
-import desenvolvimentoWeb from "../../assets/courses/desenvolvimento-web.jpg"
-import desenvolvimentoMobile from "../../assets/courses/desenvolvimento-mobile.jpg"
-import desenvolvimentoParaIA from "../../assets/courses/inteligencia-artificial.jpg"
-import { useSearchParams } from 'next/navigation';
 import { cursos } from './data/dataCourses';
+import { IoMdSend } from "react-icons/io";
+
 
 function Courses() {
     
@@ -44,7 +35,7 @@ function Courses() {
                 </div>
 
                 <div className="box-button-view-all-courses">
-                    <button> VER TODOS OS CURSOS <FaArrowRightLong /> </button>
+                    <button> Ver todos os cursos <IoMdSend /> </button>
                 </div>
             </div>
             <div className='courses-content'>
