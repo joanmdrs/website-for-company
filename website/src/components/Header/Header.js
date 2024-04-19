@@ -11,7 +11,7 @@ function CustomHeader(){
 
     return (
 
-        <Header className="component-header"> 
+        <div className="component-header"> 
             <Logo />
             <CustomMenu />
             <div style={{
@@ -25,7 +25,7 @@ function CustomHeader(){
                 <ButtonContact />
 
             </div>
-        </Header>
+        </div>
     )
 }
 

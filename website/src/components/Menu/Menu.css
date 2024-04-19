@@ -1,9 +1,25 @@
-.ant-layout-header .ant-menu {
-    flex: 1;
-    margin: 0;
-    border: none;
+.menu {
+    width: 50%;
+    list-style-type: none;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    
+  }
+  
+  .menu li {
+    margin-right: 20px; 
+    font-size: 14px;
     font-family: 'Nunito', sans-serif;
-}
+  }
+  
+  .menu li:last-child {
+    margin-right: 0; 
+  }
+  
+  .menu li svg {
+    margin-right: 5px; 
+  }
+  
