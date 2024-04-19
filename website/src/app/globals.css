@@ -17,12 +17,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
-}
-
-.ant-layout {
-    overflow: hidden;
-    background-color: #FFFFFF;
-    z-index: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
   
 .global-section {
