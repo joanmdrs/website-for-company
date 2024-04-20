@@ -6,22 +6,18 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    color: #fff;
 }
 
 .company-name p{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    color: #585858;
 }
 
 .company-name p:first-of-type {
     font-size: 15px;
     font-weight: 600;
-    color: #0B0B61 ;
 }
 
 .company-name p:last-of-type {
     font-size: 13px;
-    color: var(--primary-color);
 }
