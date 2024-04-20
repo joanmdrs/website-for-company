@@ -2,7 +2,7 @@
     font-family: 'Nunito', sans-serif;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    max-width: 100vw;
     height: auto;
     padding: 10%;
     display: flex;
@@ -12,12 +12,12 @@
 }
 
 .feedback-header {
-    width: 50%;
+    max-width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-bottom: 5%;
+    margin-bottom: 5%;
 }
 
 .feedback-header h2 {
@@ -39,27 +39,10 @@
 .feedback-header p {
     font-size: 15px;
 }
-/* .feedback-title button {
-    border-radius: 10px;
-    border: 1px solid var(--primary-color);
-    outline: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 10px;
-    font-size: 15px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: var(--primary-color);
-    background-color: transparent;
-
-} */
 
 .feedback-content {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     gap: 20px;
 }
@@ -157,6 +140,11 @@
     background-color: #FFFFFF;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.feedback-item:hover {
+    transform: translateY(-20px);
 }
 
 .box-image {
