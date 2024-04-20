@@ -1,11 +1,8 @@
-'use client'
 import Image from 'next/image';
 import "./Home.css"
 import assetHome from "../../assets/asset-home.png"
 import { FaArrowRightLong } from "react-icons/fa6";
 import { PiVideoFill } from "react-icons/pi";
-
-import {Button} from 'antd';
 
 function Home(){
     return (
@@ -20,15 +17,15 @@ function Home(){
                     </p>
                 </div>
                 <div className='home-buttons'>
-                    <Button type='primary' className='get-started'> 
+                    <button className='get-started'> 
                         Vamos Iniciar
                         <FaArrowRightLong />
                        
-                    </Button>
+                    </button>
 
-                    <Button type='default' className='watch-video'> 
+                    <button type='default' className='watch-video'> 
                         <PiVideoFill/> Assista o vídeo
-                    </Button>
+                    </button>
                 </div>
       
             </div>
