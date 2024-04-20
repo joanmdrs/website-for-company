@@ -67,3 +67,15 @@
 ## About 
 
 <a href="https://br.freepik.com/fotos-gratis/grupo-de-pessoas-trabalhando-no-plano-de-negocios-em-um-escritorio_5495105.htm#fromView=search&page=1&position=2&uuid=146055d4-d8e4-4985-9bc5-86000f0a9882">Imagem de senivpetro no Freepik</a>
+
+
+## Events 
+
+<a href="https://br.freepik.com/fotos-gratis/pessoas-que-participam-do-evento-de-negocios_23987548.htm#page=2&position=11&from_view=collections&uuid=c9172b1f-b3bd-4ee9-a56b-d9f55b9fe398">Imagem de Freepik</a>
+
+<a href="https://br.freepik.com/fotos-gratis/pessoas-que-participam-do-evento-de-negocios_23987529.htm#fromView=search&page=1&position=13&uuid=b4e79cf1-e565-4fb4-966d-e4408ec0a69b">Imagem de freepik</a>
+
+<a href="https://br.freepik.com/fotos-gratis/pessoas-que-participam-do-evento-de-negocios_23987502.htm">Imagem de freepik</a>
+
+<a href="https://br.freepik.com/fotos-gratis/pessoas-que-participam-do-evento-de-negocios_23987500.htm#&position=13&from_view=collections&uuid=72b69913-f1d4-467a-87db-3a293e300956"> Imagem de Freepik</a>
+

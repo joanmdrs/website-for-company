@@ -9,6 +9,7 @@ import About from '@/pages/About/About';
 import Contact from '@/pages/Contact/Contact';
 import Dashboard from '@/pages/Dashboard/Dashboard';
 import CustomHeader from '@/components/Header/Header';
+import Events from '@/pages/Events/Events';
 import Footer from '@/pages/Footer/Footer';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
                 <Reasons />
                 <Courses />
                 <Feedback />
+                <Events />
                 <About />
                 <Contact />
                 <Footer />
