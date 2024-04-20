@@ -8,16 +8,19 @@
 }
 
 .courses-header {
-    width: 100%;
+    width: 80%;
+    height: auto;
+    overflow-x: hidden;
     display: flex;
     justify-content: space-between;
-    padding: 10%;
-    padding-top: 0;
-    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
 }
 
 .courses.title {
-    width: 50%;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .courses-header h2 {
@@ -37,7 +40,6 @@
 }
 
 .box-button-view-all-courses {
-    width: 50%;
     display: flex;
     justify-content: flex-end;
 }

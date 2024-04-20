@@ -8,22 +8,7 @@ import { useEffect } from "react";
 
 
 function Dashboard() {
-
-    useEffect(() => {
-        const dashboardItems = document.querySelectorAll(".dashboard-item")
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                entry.target.classList.toggle('show', entry.isIntersecting)
-            })
-        })
-
-        console.log(dashboardItems)
-
-        dashboardItems.forEach(dashboard => {
-            observer.observe(dashboard)
-        })
-    }, [])
-
+    
     return (
         <div className="dashboard-section">
             <div className="dashboard-item"> 

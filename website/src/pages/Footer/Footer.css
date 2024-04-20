@@ -1,0 +1,14 @@
+.footer-section {
+    width: 100vw;
+    background-color: var(--primary-color);
+}
+.footer-box-top {
+    display: flex;
+    width: 100%;
+}
+
+.footer-info {
+    width: 30%;
+    background-color: green;
+
+}
