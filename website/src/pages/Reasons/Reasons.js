@@ -1,8 +1,7 @@
 'use client'
 import "./Reasons.css";
 import Image from "next/image";
-import { motivos } from "./data/dataReasons";
-import { useEffect } from "react";
+import { motivos } from "./_data/dataReasons";
 
 function Reasons() {
 

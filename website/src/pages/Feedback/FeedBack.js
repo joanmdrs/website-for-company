@@ -3,7 +3,7 @@ import "./FeedBack.css"
 import { AiOutlinePlayCircle } from "react-icons/ai";
 import React, { useState } from 'react';
 import { FaStar } from "react-icons/fa6";
-import { feedbacks } from "./data/dataFeedback";
+import { feedbacks } from "./_data/feedback";
 
 function Feedback(){
 
