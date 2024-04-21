@@ -1,9 +1,9 @@
 'use client'
 import "./FeedBack.css"
 import { AiOutlinePlayCircle } from "react-icons/ai";
-import { feedbacks } from "./data/dataFeedback";
 import { useState } from "react";
 import { FaStar } from "react-icons/fa6";
+import feedbacks from "./data/dataFeedback";
 
 function Feedback (){
 
