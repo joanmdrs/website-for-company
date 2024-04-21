@@ -5,11 +5,14 @@
     flex-direction: column;
     max-width: 100vw;
     height: auto;
-    padding: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     border: 1px solid red;
 }
 
 .events-header {
+    padding-left: 10%;
+    padding-right: 10%;
     max-width: 100%;
     display: flex;
     justify-content: space-between;
@@ -66,20 +69,27 @@
     display: flex;
     margin-top: 5%;
     color: #FFFFFF;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
 }
 
-.events-content .box-left {
-    max-width: 50%;
+.events-carousel {
+    display: flex;
     height: auto;
+    transition: all 1s ease-in-out ;
 }
 
 .event-item {
-    max-width: 100%;
+    position: relative;
+    min-width: 100%;
+    border: 1px solid red;
     height: auto;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.event-item .box-left {
+    max-width: 50%;
+    height: auto;
     padding: 30px;
     background-color: #112F47;
     border-top-left-radius: 20px;
@@ -113,24 +123,53 @@
     font-size: 14px;
 }
 
-.events-content .box-right {
-    max-width: 50%;
+.event-item .box-right {
+    max-width: 40%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.events-content .box-right .event-image {
+.event-item .box-right .event-image {
     width: 100%;
     height: 100%;
 }
 
 
-.events-content .box-right .event-image img {
+.event-item .box-right .event-image img {
     width: 100%;
     height: 100%;
     object-position: center;
     object-fit: cover;
     object-position: center; 
+}
+
+.event-item .button-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.event-item .button-slide svg {
+    color: #000;
+    font-size: 30px;
+}
+
+.event-item .button-right {
+    right: 5%;
+}
+
+.event-item .button-left {
+    left: 5%;
 }

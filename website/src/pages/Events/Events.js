@@ -4,9 +4,23 @@ import Image from "next/image"
 import { CiCalendar } from "react-icons/ci";
 import { HiOutlineMapPin } from "react-icons/hi2";
 import { FaArrowTrendUp } from "react-icons/fa6";
-import event1 from '../../assets/events/event1.png'
+import { events } from "@/database/_dataEvents";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+import { useState } from "react";
 
 function Events(){
+
+    const [currentSlide, setCurrentSlide] = useState(0);
+    
+    const nextSlide = () => {
+        setCurrentSlide((prevSlide) => (prevSlide + 1) % events.length);
+    };
+    
+    const prevSlide = () => {
+        setCurrentSlide((prevSlide) => (prevSlide - 1 + events.length) % events.length);
+    };
+
 
     return (
         <section className="events-section">
@@ -21,34 +35,45 @@ function Events(){
             </div>
 
             <div className="events-content"> 
-                <div className="box-left">
-                    <div className="event-item"> 
-                        <h4 className="event-title">
-                            Conferência Anual de Tecnologia
-                        </h4>
+                <div className="events-carousel" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+                    {events.map((item, index) => (
+                        <div key={index} className="event-item">
+                            <div className="button-slide button-left" onClick={() => prevSlide()}>
+                                <IoIosArrowBack />
+                            </div>
 
-                        <ul>
-                            <li className="event-date">
-                                <CiCalendar />
-                                <p>25 de maio de 2024</p>
-                            </li>
-                            <li  className="event-local">
-                                <HiOutlineMapPin />
-                                <p> Centro de Convenções da Cidade </p>
-                            </li>
-                            <li className="event-description">
-                                <p>A Conferência Anual de Tecnologia é um evento de destaque na indústria, reunindo profissionais e especialistas para discutir as últimas tendências e inovações em tecnologia.</p>
-                            </li>
-                        </ul>
-                        <button> Inscreva-se <FaArrowTrendUp /> </button>
-                    </div>
-                </div>
+                            <div className="box-left">
+                                <h4 className="event-title">
+                                    {item.title}
+                                </h4>
 
-                <div className="box-right">
-                    <div className="event-image"> 
-                        <Image src={event1} />
+                                <ul>
+                                    <li className="event-date">
+                                        <CiCalendar />
+                                        <p>{item.date}</p>
+                                    </li>
+                                    <li  className="event-local">
+                                        <HiOutlineMapPin />
+                                        <p> {item.local} </p>
+                                    </li>
+                                    <li className="event-description">
+                                        <p>{item.description}</p>
+                                    </li>
+                                </ul>
+                                <button> Inscreva-se <FaArrowTrendUp /> </button>
+                            </div>
 
-                    </div>
+                            <div className="box-right">
+                                <div className="event-image"> 
+                                    {item.image}
+                                </div>
+                            </div>
+
+                            <div className="button-slide button-right" onClick={()=> nextSlide()}>
+                                <IoIosArrowForward />
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         
