@@ -1,11 +1,11 @@
 'use client'
 import "./FeedBack.css"
 import { AiOutlinePlayCircle } from "react-icons/ai";
-import { useState } from "react";
+import React, { useState } from 'react';
 import { FaStar } from "react-icons/fa6";
-import feedbacks from "./data/dataFeedback";
+import { feedbacks } from "./data/dataFeedback";
 
-function Feedback (){
+function Feedback(){
 
     const [feedbackEmphasis, setFeedbackEmphasis] = useState(feedbacks[0])
 

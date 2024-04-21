@@ -5,7 +5,7 @@ import student3 from "../../../assets/feedbacks/student-3.jpg"
 import student4 from "../../../assets/feedbacks/student-4.jpg"
 
 
-const feedbacks = [
+export const feedbacks = [
     {
         image: <Image src={student1} />,
         autor: "Juliana Lopes",
@@ -55,5 +55,3 @@ const feedbacks = [
         comment: "O curso de Machine Learning superou todas as minhas expectativas. Os casos de estudo práticos foram muito úteis para entender os conceitos mais complexos.",
     }
 ];
-
-export default feedbacks
