@@ -1,8 +1,8 @@
 import Image from "next/image";
-import student1 from "../../../assets/feedbacks/student-1.jpg"
-import student2 from "../../../assets/feedbacks/student-2.jpg"
-import student3 from "../../../assets/feedbacks/student-3.jpg"
-import student4 from "../../../assets/feedbacks/student-4.jpg"
+import student1 from "../assets/feedbacks/student-1.jpg"
+import student2 from "../assets/feedbacks/student-2.jpg"
+import student3 from "../assets/feedbacks/student-3.jpg"
+import student4 from "../assets/feedbacks/student-4.jpg"
 
 
 export const feedbacks = [
