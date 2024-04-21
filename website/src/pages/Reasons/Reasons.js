@@ -1,7 +1,6 @@
 'use client'
 import "./Reasons.css";
-import Image from "next/image";
-import { motivos } from "./_data/dataReasons";
+import { motivos } from "./data/_dataReasons";
 
 function Reasons() {
 

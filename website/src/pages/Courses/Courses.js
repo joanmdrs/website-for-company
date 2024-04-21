@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { FaArrowRightLong } from "react-icons/fa6";
 import "./Courses.css";
 import Card from '../../components/Card/Card.js';
-import { cursos } from './_data/dataCourses';
+import { cursos } from './data/_dataCourses';
 import { IoMdSend } from "react-icons/io";
 
 
