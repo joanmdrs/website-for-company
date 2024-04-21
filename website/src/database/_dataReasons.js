@@ -5,7 +5,7 @@ import asset4 from "../../../assets/reasons/inovacao.png"
 import asset5 from "../../../assets/reasons/responsabilidade.png"
 import asset6 from "../../../assets/reasons/empreendedorismo.png"
 import Image from "next/image";
-import { feedbacks } from "@/pages/Feedback/data/_dataFeedback"
+import { feedbacks } from "@/database/_dataFeedback"
 
 export const motivos = [
     {   

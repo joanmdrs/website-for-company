@@ -1,6 +1,6 @@
 'use client'
 import "./Reasons.css";
-import { motivos } from "./data/_dataReasons";
+import { motivos } from "../../database/_dataReasons";
 
 function Reasons() {
 
